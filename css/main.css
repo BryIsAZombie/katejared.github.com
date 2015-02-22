@@ -10,11 +10,48 @@ body {
   width: 100%
 }
 
+#loveline,
+#wedding,
+#party,
+#registry {
+  padding: 40px 0;
+}
+
+#proposal,
+#lodgeing {
+  padding-bottom: 40px;
+}
+
+section.grey {
+  background: #efefef
+}
+
+.section-header {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  color: #50004f;
+}
+
+.section-copy {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.15em;
+  line-height: 24px;
+  color: #898989;
+}
+
 .loveline {
   list-style: none;
   margin-top: 40px;
-  padding: 60px 0 20px;
+  padding: 0px 0 20px;
   position: relative;
+}
+
+.loveline-list {
+  padding-top: 80px;
+  background: url("../img/loveline-bottom-arrow.png") no-repeat 50.1% 100%;
 }
 
 .loveline:before {
@@ -58,14 +95,18 @@ body {
   float: left;
   background: #f3f3f3;
   border-radius: 0px;
-  padding: 20px;
+  padding: 20px 40px;
   position: relative;
   text-align: right;
 }
 
 .loveline > li > .loveline-panel .date {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  color: #898989;
   position: absolute;
-  top: -20px;
+  top: -30px;
   right: 0px;
 }
 
@@ -102,11 +143,10 @@ body {
 
 .loveline > li.loveline-inverted > .loveline-panel .date {
   position: absolute;
-  top: -20px;
   left: 0px;
 }
 
-.loveline > li.loveline-inverted > .loveline-panel:before {  
+.loveline > li.loveline-inverted > .loveline-panel:before {
   left: -19px;
   right: auto;
   -webkit-transform: rotate(180deg);
@@ -124,20 +164,21 @@ body {
 }
 
 .loveline-title {
-  margin-top: 0;
-  color: inherit;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 2em;
+  color: #50004f;
 }
 
-.loveline-body > p,
-.loveline-body > ul {
-  margin-bottom: 0;
-}
-
-.loveline-body > p + p {
-  margin-top: 5px;
+.loveline-body > p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  color: #656565;
 }
 
 @media (max-width: 767px) {
+  ul.loveline-list {
+    background: url("../img/loveline-bottom-arrow.png") no-repeat 8.5% 100%;
+  }
   ul.loveline:before {
     left: 40px;
   }
@@ -178,19 +219,3 @@ body {
     transform: rotate(180deg);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
