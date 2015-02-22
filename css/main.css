@@ -1,6 +1,13 @@
 body {
   padding-top: 50px;
+  color: #1e1e1e;
 }
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
 .jumbotron {
   padding: 0px;
   Background: none;
@@ -39,9 +46,45 @@ section.grey {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.15em;
   line-height: 24px;
-  color: #898989;
+  color: #1e1e1e;
 }
 
+.script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  color: #1e1e1e;
+  padding: 30px 0 0 0;
+  margin: 0px;
+}
+
+.script-header {
+  position: relative;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  color: #1e1e1e;
+  padding: 40px 0 20px 0;
+}
+
+.script-header:after {
+  z-index: 2;
+  position: absolute;
+  height: 1px;
+  content: " ";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #1e1e1e;
+  top: 50%;
+  margin-top: 6px;
+}
+
+.script-header p {
+  position: relative;
+  display: inline-block;
+  padding: 0px 20px;
+  background: #ffffff;
+  z-index: 3;
+}
+/* LOVE LINE */
 .loveline {
   list-style: none;
   margin-top: 40px;
@@ -174,7 +217,46 @@ section.grey {
   font-size: 1em;
   color: #656565;
 }
+/* WEDDING PARTY */
+.thumb-nail {
+  margin-bottom: 40px;
+}
 
+.thumb-nail img {
+  width: 100%;
+}
+
+.thumb-nail .content {
+  padding: 20px 14px;
+  color: #1e1e1e;
+  border: 10px solid #efefef;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+}
+
+.thumb-nail .header {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 2em;
+  color: #50004f;
+  margin: 0px;
+}
+
+.thumb-nail .title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+/* REGISTRY */
+#registry .section-header {
+  margin-bottom: 40px;
+}
+
+#registry .thumb-nail .content {
+  background-color: #ffffff;
+  border: 10px solid #f8f8f8;
+}
 @media (max-width: 767px) {
   ul.loveline-list {
     background: url("../img/loveline-bottom-arrow.png") no-repeat 8.5% 100%;
@@ -211,7 +293,7 @@ section.grey {
 
   ul.loveline > li > .loveline-panel:before {
     left: -19px;
-    right: auto;
+     right: auto;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
