@@ -1,9 +1,183 @@
+body {
+  padding-top: 50px;
+}
+.jumbotron {
+  padding: 0px;
+  Background: none;
+}
 
+.jumbotron img {
+  width: 100%
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.loveline {
+  list-style: none;
+  margin-top: 40px;
+  padding: 60px 0 20px;
+  position: relative;
+}
 
+.loveline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 1px;
+  background-color: #d3d3d3;
+  left: 50%;
+  margin-left: 0px;
+}
+
+.loveline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.loveline > li:before,
+.loveline > li:after {
+  content: " ";
+  display: table;
+}
+
+.loveline > li:after {
+  clear: both;
+}
+
+.loveline > li:before,
+.loveline > li:after {
+  content: " ";
+  display: table;
+}
+
+.loveline > li:after {
+  clear: both;
+}
+
+.loveline > li > .loveline-panel {
+  width: 46%;
+  float: left;
+  background: #f3f3f3;
+  border-radius: 0px;
+  padding: 20px;
+  position: relative;
+  text-align: right;
+}
+
+.loveline > li > .loveline-panel .date {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+.loveline > li > .loveline-panel:before {
+  width: 28px;
+  height: 17px;
+  position: absolute;
+  top: 34px;
+  right: -19px;
+  display: inline-block;
+  content: " ";
+  background-image: url("../img/loveline-arrow.png");
+}
+
+.loveline > li > .loveline-badge {
+  color: #fff;
+  width: 50px;
+  height: 30px;
+  line-height: 26px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.loveline > li.loveline-inverted > .loveline-panel {
+  text-align: left;
+  float: right;
+}
+
+.loveline > li.loveline-inverted > .loveline-panel .date {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+}
+
+.loveline > li.loveline-inverted > .loveline-panel:before {  
+  left: -19px;
+  right: auto;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.loveline > li.loveline-inverted > .loveline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.loveline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.loveline-body > p,
+.loveline-body > ul {
+  margin-bottom: 0;
+}
+
+.loveline-body > p + p {
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  ul.loveline:before {
+    left: 40px;
+  }
+
+  ul.loveline > li {
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  ul.loveline > li > .loveline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.loveline > li > .loveline-panel .date {
+    left: 0px;
+  }
+
+  ul.loveline > li > .loveline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 28px;
+  }
+
+  ul.loveline > li > .loveline-panel {
+    text-align: left;
+    float: right;
+  }
+
+  ul.loveline > li > .loveline-panel:before {
+    left: -19px;
+    right: auto;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
 
 
 
