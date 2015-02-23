@@ -257,6 +257,10 @@ section.grey {
   background-color: #ffffff;
   border: 10px solid #f8f8f8;
 }
+
+#registry a {
+  word-wrap: break-word;
+}
 @media (max-width: 767px) {
   ul.loveline-list {
     padding: 80px 0 0 0;
