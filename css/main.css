@@ -93,7 +93,7 @@ section.grey {
 }
 
 .loveline-list {
-  padding-top: 80px;
+  padding: 80px 80px 0px 80px;
   background: url("../img/loveline-bottom-arrow.png") no-repeat 50.1% 100%;
 }
 
@@ -166,7 +166,7 @@ section.grey {
 
 .loveline > li > .loveline-badge {
   color: #fff;
-  width: 50px;
+  width: 18px;
   height: 30px;
   line-height: 26px;
   font-size: 1.4em;
@@ -174,7 +174,7 @@ section.grey {
   position: absolute;
   top: 28px;
   left: 50%;
-  margin-left: -25px;
+  margin-left: -8px;
   background-color: #ffffff;
   z-index: 100;
 }
@@ -259,6 +259,7 @@ section.grey {
 }
 @media (max-width: 767px) {
   ul.loveline-list {
+    padding: 80px 0 0 0;
     background: url("../img/loveline-bottom-arrow.png") no-repeat 8.5% 100%;
   }
   ul.loveline:before {
@@ -281,7 +282,7 @@ section.grey {
   }
 
   ul.loveline > li > .loveline-badge {
-    left: 15px;
+    left: 32px;
     margin-left: 0;
     top: 28px;
   }
