@@ -21,12 +21,12 @@ body {
 #wedding,
 #party,
 #registry {
-  padding: 40px 0;
+  padding: 2em 0;
 }
 
 #proposal,
 #lodgeing {
-  padding-bottom: 40px;
+  padding-bottom: 2em;
 }
 
 section.grey {
@@ -62,7 +62,7 @@ section.grey {
   font-family: 'Great Vibes', cursive;
   font-size: 2em;
   color: #1e1e1e;
-  padding: 40px 0 20px 0;
+  padding: 2em 0 20px 0;
 }
 
 .script-header:after {
@@ -87,7 +87,7 @@ section.grey {
 /* LOVE LINE */
 .loveline {
   list-style: none;
-  margin-top: 40px;
+  margin-top: 2em;
   padding: 0px 0 20px;
   position: relative;
 }
@@ -138,7 +138,7 @@ section.grey {
   float: left;
   background: #f3f3f3;
   border-radius: 0px;
-  padding: 20px 40px;
+  padding: 20px 2em;
   position: relative;
   text-align: right;
 }
@@ -219,7 +219,7 @@ section.grey {
 }
 /* WEDDING PARTY */
 .thumb-nail {
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
 
 .thumb-nail img {
@@ -250,7 +250,7 @@ section.grey {
 }
 /* REGISTRY */
 #registry .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
 
 #registry .thumb-nail .content {
@@ -263,7 +263,7 @@ section.grey {
     background: url("../img/loveline-bottom-arrow.png") no-repeat 32px 100%;
   }
   ul.loveline:before {
-    left: 40px;
+    left: 2em;
   }
 
   ul.loveline > li {
