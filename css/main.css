@@ -3,6 +3,110 @@ body {
   color: #1e1e1e;
 }
 
+.affix {
+  top: 0px;
+  width: 100%;
+}
+
+.navbar-top,
+.navbar-lower {
+  background: #ffffff;
+  z-index: 9999999;
+  box-shadow: none;
+}
+
+.navbar-top {
+  margin: -50px 0 0 0;
+}
+
+.navbar-top .navbar-header {
+  width: 100%;
+  padding: 18px 0;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.navbar-lower {
+  margin: -2px 0 0 0;
+  border: 0px;
+}
+
+.navbar-lower .navbar-nav {
+  text-align: center;
+  float: none;
+}
+
+.navbar-lower .navbar-nav li {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navbar-lower .navbar-nav li a {
+  color: #737373;
+}
+
+.navbar-lower.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a {
+  background: none;
+  color: #737373;
+  background-image: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #737373;
+  background: none;
+  background-image: none;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+}
+
+.navbar-lower-sm .navbar-brand {
+  font-size: 2em;
+  position: relative;
+}
+
+.navbar-lower-sm .navbar-brand:before {
+  top: 16px;
+  bottom: 0;
+  position: absolute;
+  content: "+";
+  left: 50%;
+  margin-left: 0px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1em;
+  color: #bee4de;  
+}
+
+.navbar-brand-centered {
+  position: relative;
+  left: 50%;
+  display: block;
+  width: 400px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.navbar-brand-centered:before {
+  top: 16px;
+  bottom: 0;
+  position: absolute;
+  content: "+";
+  left: 50%;
+  margin-left: 0px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1em;
+  color: #bee4de;
+}
+
+.navbar>.container .navbar-brand-centered,
+.navbar>.container-fluid .navbar-brand-centered {
+  margin-left: -200px;
+}
+
 .col-centered {
   float: none;
   margin: 0 auto;
@@ -25,7 +129,7 @@ body {
 }
 
 #proposal,
-#lodgeing {
+#lodging {
   padding-bottom: 40px;
 }
 
@@ -143,6 +247,11 @@ section.grey {
   text-align: right;
 }
 
+.loveline > li > .loveline-panel.stroked {
+  background: #ffffff;
+  border: 2px solid #f3f3f3;
+}
+
 .loveline > li > .loveline-panel .date {
   font-family: 'Playfair Display', sans-serif;
   font-size: 1em;
@@ -162,6 +271,10 @@ section.grey {
   display: inline-block;
   content: " ";
   background-image: url("../img/loveline-arrow.png");
+}
+
+.loveline > li > .loveline-panel.stroked:before {
+  background-image: url("../img/loveline-arrow-white.png");
 }
 
 .loveline > li > .loveline-badge {
@@ -247,6 +360,12 @@ section.grey {
   letter-spacing: 2px;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.bonus-holder {
+  font-family: 'Quicksand', sans-serif;
+  padding: 15px;
+  border: 2px solid #f8f8f8;
 }
 /* REGISTRY */
 #registry .section-header {

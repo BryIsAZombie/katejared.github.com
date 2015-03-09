@@ -16,26 +16,61 @@
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-lower">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-top hidden-sm hidden-xs">
       <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <div class="navbar-brand navbar-brand-centered">KatieJared</div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Affix navbar for md/lg screens -->
+    <nav class="navbar navbar-default navbar-lower hidden-sm hidden-xs" role="navigation">
+      <div class="container">
+        <div class="collapse navbar-collapse collapse-buttons">
+          <ul class="nav navbar-nav">
+            <li><a class="page-scroll" href="#loveline">LOVELINE</a></li>
+            <li><a class="page-scroll" href="#proposal">THE PROPOSAL</a></li>
+            <li><a class="page-scroll" href="#wedding">THE WEDDING</a></li>
+            <li><a class="page-scroll" href="#party">WEDDING PARTY</a></li>
+            <li><a class="page-scroll" href="#lodging">TRAVEL & LODGING</a></li>
+            <li><a class="page-scroll" href="#registry">REGISTRY</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Affix navbar for sm/xs screens -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-lower-sm hidden-md hidden-lg" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">PARTY HARD</a>
+          <div class="navbar-brand">KatieJared</div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="page-scroll" href="#loveline">LOVELINE</a></li>
+            <li><a class="page-scroll" href="#proposal">THE PROPOSAL</a></li>
+            <li><a class="page-scroll" href="#wedding">THE WEDDING</a></li>
+            <li><a class="page-scroll" href="#party">WEDDING PARTY</a></li>
+            <li><a class="page-scroll" href="#lodging">TRAVEL & LODGING</a></li>
+            <li><a class="page-scroll" href="#registry">REGISTRY</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <section id="hero">
       <div class="jumbotron">
@@ -48,6 +83,7 @@
         <div class="col-md-offset-3 col-md-6 section-copy">
           <p>From "Nice to meet you" to "I love you", it's been a journey filled with fun, laughter and life long memories</p>
         </div>
+
         <ul class="col-md-12 loveline loveline-list">
           <li>
             <div class="loveline-badge">
@@ -128,7 +164,7 @@ York City, Jared proposed to Katie.</p>
             <div class="loveline-badge">
               <img src="img/loveline-heart.png" />
             </div>
-            <div class="loveline-panel">
+            <div class="loveline-panel stroked">
               <p class="date">
                 <small class="text-muted">
                   October 24th, 2015
@@ -313,7 +349,7 @@ lives in Jefferson City, MO with his fiancé and two daughters and enjoys tearin
         </div>
       </div>
     </section>
-    <section id="lodgeing">
+    <section id="lodging">
       <div class="jumbotron">
         <img src="img/map.png" />
       </div>
@@ -338,10 +374,13 @@ lives in Jefferson City, MO with his fiancé and two daughters and enjoys tearin
               <img src="img/holiday-inn.png" />
               <div class="content">
                 <p class="header">Holiday Inn Express</p>
-                
+
                 <p class="title col-centered col-md-8">55 HOLIDAY LANE<br/>FOND DU LAC, WI 54935 414.563.400</p>
                 <p>Opening in the Summer of 2015, Holiday Inn Express offers complimentary internet access, hot breakfast, and an indoor pool & whirlpool.</p>
-                <p>There is a block of 20 room available at the special rate of $123.00 / night. Please mention theettler / Powell wedding when booking.</p>
+                <p>There is a block of 20 room available at the special rate of $123.00 / night. Please mention the Zettler / Powell wedding when booking.</p>
+<hr/>
+                <p>Rooms must be booked by <br/>October 3rd to receive special rate.</p>
+<hr/>
                 <p><a href="http://www.wiscohotels.com">WWW.WISCOHOTELS.COM</a></p>
               </div>
             </div>
@@ -350,13 +389,23 @@ lives in Jefferson City, MO with his fiancé and two daughters and enjoys tearin
             <div class="thumb-nail text-center">
               <img src="img/comfort-inn.png" />
               <div class="content">
-                <p class="header">Comfornt Inn & Suites</p>
+                <p class="header">Comfort Inn & Suites</p>
                 <p class="title col-centered col-md-8">77 HOLIDAY LANE<br/>FOND DU LAC, WI 54935 920.921.4000</p>
                 <p>Comfort Inn & Suites offers complimentary internet
 access, a deluxe continental breakfast buffet, and an Indoor pool and game room.</p>
-                <p>There is a block of 10 rooms available at the special rate of $93.00 / night. Please mention theettler / Powell wedding when booking.</p>
+                <p>There is a block of 10 rooms available at the special rate of $93.00 / night. Please mention the Zettler / Powell wedding when booking.</p>
+<hr/>
+                <p>Rooms must be booked by <br/>October 3rd to receive special rate.</p>
+<hr/>
                 <p><a href="http://www.wiscohotels.com">WWW.WISCOHOTELS.COM</a></p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10 text-center">
+            <div class="bonus-holder">
+              <span><strong>BONUS:</strong> Guests of either hotel, will enjoy a complimentary shuttle service to & from the wedding venue via school bus.</span>
             </div>
           </div>
         </div>
@@ -392,9 +441,9 @@ access, a deluxe continental breakfast buffet, and an Indoor pool and game room.
     </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
       <script src="js/vendor/bootstrap.min.js"></script>
-
+      <script src="js/vendor/jquery.easing.min.js"></script>
+      <script src="js/vendor/scrolling-nav.js"></script>
       <script src="js/main.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
