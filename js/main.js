@@ -1,3 +1,3 @@
 $('.navbar-lower').affix({
-  offset: {top: 0}
+  offset: {top: 50}
 });
