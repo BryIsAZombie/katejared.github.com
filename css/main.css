@@ -3,6 +3,10 @@ body {
   color: #1e1e1e;
 }
 
+a {
+  color: #50004f;
+}
+
 .affix {
   top: 0px;
   width: 100%;
@@ -85,7 +89,7 @@ body {
   margin-left: 0px;
   font-family: 'Great Vibes', cursive;
   font-size: 1em;
-  color: #bee4de;  
+  color: #bee4de;
 }
 
 .navbar-brand-centered {
@@ -149,6 +153,39 @@ body {
   text-shadow: 1px 1px 2px rgba(8,8,8,.43);
 }
 
+.jumbotron.proposal .kate,
+.jumbotron.proposal .jared {
+  display: block;
+  position: absolute;
+  width: 44%;
+  top: 37%;
+}
+
+.jumbotron.proposal .kate {
+  left: 0px;
+  text-align: right;
+}
+.jumbotron.proposal .jared {
+  right: 0px;
+  text-align: left;
+}
+
+.jumbotron.proposal p {
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  margin-top: -4px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(8,8,8,.75);
+}
+
+.jumbotron.proposal p:first-child {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
 #loveline,
 #wedding,
 #party,
@@ -187,6 +224,10 @@ section.grey {
   color: #1e1e1e;
   padding: 30px 0 0 0;
   margin: 0px;
+}
+
+.playfair {
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .script-header {
@@ -379,6 +420,80 @@ section.grey {
   font-family: 'Quicksand', sans-serif;
   font-size: 1em;
   color: #656565;
+}
+/* WEDDING STEPS */
+.stepwizard {
+  position: relative;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.stepwizard:before {
+  top: 14px;
+  bottom: 0;
+  left: 12%;
+  position: absolute;
+  content: " ";
+  width: 75%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.stepwizard-step {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 4px;
+  color: #50004f;
+}
+
+.stepwizard-step .img-holder {
+  display: inline-block;
+  height: 46px;
+  margin: 0 auto;
+  background: #efefef;
+  padding: 2px;
+}
+
+.stepwizard .img-holder.rings {
+  padding: 2px 6px;
+}
+
+.stepwizard .img-holder.glasses {
+  padding: 2px 2px 2px 6px;
+}
+
+.stepwizard .img-holder.plate {
+}
+
+.stepwizard .img-holder.stars {
+  padding: 2px 6px;
+}
+
+.stepwizard-step p {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.stepwizard-step p:before {
+  width: 17px;
+  height: 27px;
+  position: absolute;
+  top: 36%;
+  right: 50%;
+  margin-right: -8px;
+  display: inline-block;
+  content: " ";
+  background-image: url("../img/stepwizard-arrow.jpg");
+}
+
+.stepwizard-step span {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  letter-spacing: 2px;
+  color: #898989;
 }
 /* WEDDING PARTY */
 .thumb-nail {
