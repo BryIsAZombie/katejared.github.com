@@ -14,7 +14,15 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script>
+        // Wait for window load
+        $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+        });
+      </script>
       <script>
         $(document).ready(function() {
         jQuery(".jumbotron.hero span:first-child").fitText();
@@ -27,6 +35,7 @@
       </script>
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-lower">
+    <div class="se-pre-con"></div>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -185,7 +194,7 @@ York City, Jared proposed to Katie.</p>
           <li class="loveline">
             <div class="loveline-oval-badge">
               <span>2015</span>
-            </div>            
+            </div>
             <div class="loveline-badge">
               <img src="img/loveline-heart.png" />
             </div>
@@ -275,7 +284,7 @@ York City, Jared proposed to Katie.</p>
               <p class="hidden-xs">DINNER</p>
               <p class="visible-xs-block">DINNER</p>
               <span>6:00 PM</span>
-            </div> 
+            </div>
             <div class="stepwizard-step col-md-3 col-sm-3 col-xs-3">
               <div class="img-holder stars">
                 <img src="img/dancing-stars.jpg" />
@@ -283,7 +292,7 @@ York City, Jared proposed to Katie.</p>
               <p class="hidden-xs">DANCING</p>
               <p class="visible-xs-block">DANCE</p>
               <span>8:00 PM</span>
-            </div> 
+            </div>
           </div>
         </div>
     </section>
