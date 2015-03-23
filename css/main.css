@@ -59,7 +59,7 @@ section.grey{background:#efefef}
 .loveline > li:before,
 .loveline > li:after{content:" ";display:table;}
 .loveline > li:after{clear:both;}
-.loveline > li > .loveline-panel{width:44%;float:left;background:#f3f3f3;border-radius:0px;padding:20px 40px;position:relative;text-align:right;}
+.loveline > li > .loveline-panel{width:44%;float:left;background:#f3f3f3;border-radius:0px;padding:20px 34px;position:relative;text-align:right;}
 .loveline > li > .loveline-panel.stroked{background:#ffffff;border:2px solid #f3f3f3;}
 .loveline > li > .loveline-panel .date{font-family:'Playfair Display', sans-serif;font-size:1em;font-style:italic;color:#898989;position:absolute;top:-30px;right:0px;}
 .loveline > li > .loveline-panel:before{width:28px;height:17px;position:absolute;top:34px;right:-19px;display:inline-block;content:" ";background-image:url("../img/loveline-arrow.png");}
@@ -89,10 +89,13 @@ section.grey{background:#efefef}
 .thumb-nail .content{padding:20px 14px;color:#1e1e1e;border:10px solid #efefef;font-family:'Quicksand', sans-serif;font-size:1em;}
 .thumb-nail .header{font-family:'Playfair Display', sans-serif;font-size:2em;color:#50004f;margin:0px;}
 .thumb-nail .title{font-family:'Quicksand', sans-serif;font-size:1.1em;letter-spacing:2px;margin-bottom:20px;text-transform:uppercase;}
-.bonus-holder{font-family:'Quicksand', sans-serif;padding:15px;border:2px solid #f8f8f8;}
+#lodging .bonus-holder{font-family:'Quicksand', sans-serif;padding:15px;border:2px solid #f8f8f8;}
+#registry .bonus-holder{font-family:'Quicksand', sans-serif;padding:15px;border:2px solid #f8f8f8; background: #ffffff;}
 #registry .section-header{margin-bottom:40px;}
 #registry .thumb-nail .content{background-color:#ffffff;border:10px solid #f8f8f8;}
-#registry a{word-wrap:break-word;}
+#registry a{word-wrap:break-word;text-decoration: none;}
+#registry a:hover{opacity: .65;text-decoration: none;};
+#registry a:link,#registry a:visited,#registry a:active,#registry a:focus{text-decoration: none !important;};
 @media (max-width:767px){ul.loveline-list{padding:80px 0 0 0;background:url("../img/loveline-bottom-arrow.png") no-repeat 32px 100%;}
 ul.loveline:before{left:40px;}
 ul.loveline > li{margin-bottom:60px;position:relative;}
